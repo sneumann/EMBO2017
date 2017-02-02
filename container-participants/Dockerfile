@@ -25,6 +25,9 @@ ADD installBioC.R /tmp/
 RUN R -f /tmp/installBioC.R \
   && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
+## Fix big red startup warning:
+RUN echo 'options(repos = c(CRAN = "https://cran.rstudio.com"))' >/usr/local/lib/R/etc/Rprofile.site 
+
 ##
 ## Copy actual analysis
 ##
