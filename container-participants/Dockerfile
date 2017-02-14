@@ -1,4 +1,4 @@
-FROM container-registry.phenomenal-h2020.eu/bioconductor/devel_metabolomics2:latest
+FROM container-registry.phenomenal-h2020.eu/bioconductor/release_metabolomics2:latest
 
 MAINTAINER Steffen Neumann <sneumann@ipb-halle.de>
 
@@ -38,6 +38,7 @@ ADD dot.rstudio.zip /tmp
 WORKDIR /home/rstudio
 RUN unzip /tmp/dot.rstudio.zip
 ADD MTBLS2.Rmd /home/rstudio/MTBLS2.Rmd
+ADD MTBLS2.Rmd /home/rstudio/MTBLS2.bib
 ADD MTBLS2.Rmd /home/rstudio/.rstudio/sources/s-A26AA33F/1919306-contents
 
 # Switch back for normal rstudio operation 
