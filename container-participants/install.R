@@ -1,6 +1,4 @@
-install.packages(c("miniCRAN","igraph","magrittr","networkD3",
-                   "visNetwork","magrittr","rmarkdown", "formatR",
-		   "tm", "wordcloud", "SnowballC"), 
+install.packages(c("rmarkdown", "formatR"), 
                  repos="https://cran.r-project.org")
 
 

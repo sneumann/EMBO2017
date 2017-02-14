@@ -1,3 +1,2 @@
-docker build -t metarbolomicsview .
-
+docker build -t EMBO2017 .
 
